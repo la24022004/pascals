@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+	<link rel="stylesheet" href="constyle.css">
+</head>
+<body>
+	<div style="background-color: white;" class="container-fluid  d-none d-md-block">
+        <div class="row">
+            <div class="col-7 d-flex  justify-content-end">
+                <img src="img/pascal.PNG" alt="" width="250" height="150" class=" ">
+            </div>
+            <div class="col-5 ">
+
+                <ul class="nav ms-auto justify-content-end align-items-center mt-3">
+                    <li class="nav-item">
+                      <button id="btn" type="button" class="btn btn-dark mt-5 mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Log In
+                      </button>
+                      
+                      <!-- Modal -->
+                      <div class="modal fade bg-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog bg-dark">
+                          <div class="modal-content bg-secondary text-light">
+                            <div class="modal-header">
+                              <h2 class="modal-title text-light Login " id="exampleModalLabel">Log In Form</h2>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <input type="text" class="form-control mt-2" id="exampleInputEmail1" placeholder="Enter Your Email">
+                                <input type="text" class="form-control mt-5" id="exampleInputEmail1" placeholder="Enter Your Password">
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Login</button>
+                            
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark Login" href="https://www.whatsapp.com"><i class="fa-brands fa-whatsapp mt-5 "></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark Login" href="https://www.twitter.com"><i class="fa-brands fa-twitter mt-5 mx-0"></i></a>
+
+                    </li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+	<nav style="background-color: black;" class="navbar navbar-expand-lg navbar-light">
+		<div class="container-fluid">
+		  <a class="navbar-brand d-block d-md-none " href="#">
+			  <img src="img/pascal.PNG" alt="" width="200" height="50" class=" ">
+		  </a>
+		  <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon bg-light"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+			  <li style="color: rgb(253, 246, 246);font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item">
+				<a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+			  </li>
+			  <li style="color: black;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item">
+				<a class="nav-link active text-light" href="gallery.html">Gallery</a>
+			  </li>
+			  <li style="color: black;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item dropdown">
+				<a class="nav-link active dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+				  Brands
+				</a>
+				<ul class="dropdown-menu dropdown " aria-labelledby="navbarDropdown" >
+				  <li><a class="dropdown-item text-dark" href="hanifj.html">Hanif Jewellers</a></li>
+				  <li><a class="dropdown-item text-dark" href="damasj.html">Damas Jewelers</a></li>
+				  <li><a class="dropdown-item text-dark" href="almasj.html">Almas Jewellers</a></li>
+				  <li><a class="dropdown-item text-dark" href="ary.html">ARY Jewellers	</a></li>
+				  <li><a class="dropdown-item text-dark" href="nayabj.html">Nayab Jewellers</a></li>
+				  
+				  <li><a class="dropdown-item text-dark" href="fazalj.html">Fazal Jewellers</a></li>
+				</ul>
+			  </li>
+			  <li style="color:white;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;" class="nav-item">
+				  <a class="nav-link active text-light" href="contact.html">Contact Us</a>
+			  </li>
+			  <li style="color: white;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item">
+				  <a class="nav-link active text-light" href="about.html">About us</a>
+			  </li>
+			  <li style="color: white;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item">
+				  <a class="nav-link active text-light" href="feedback.html">Feedback Form</a>
+			  </li>
+			  <li style="color: white;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item">
+				  <a class="nav-link active text-light" href="final.html">Comparison of Products</a>
+			  </li>
+			</ul>
+		  
+		  </div>
+		</div> 
+	  
+	  </nav>
+
+
+
+	<div class="container mt-5">
+	<h2 style="display: flex; flex-wrap: wrap; justify-content: center;align-items: center;font-family: Georgia, 'Times New Roman', Times, serif;">WE HAVE JEWELLERY IN THREE CATEGORIES AS PER BRAND</h2>
+	<H5 style="display: flex; flex-wrap: wrap; justify-content: center;align-items: center;font-family: Georgia, 'Times New Roman', Times, serif;">COMPARISON BETWEEN OUR PRODUCTS!</H5>
+</div>
+<div class="container mt-5 ">
+        <div class="row mt-5 mb-5">
+            <div class="col-lg-4 col-md-4 sm-12 ">
+       
+            <ul class="list-group">
+                <li class="list-group-item">
+                <select id="p1" style="color: white; background-color: black; font-size:1rem;font-family: Georgia, 'Times New Roman', Times, serif; width: 100%;" onchange="cmprac()">
+                    <option value="SEMI-PRECIOUS "  style= " text-align:   center;font-size: 1.2rem; font-family: Georgia, 'Times New Roman', Times, serif">SEMI-PRECIOUS</option>
+                    <option value="Gold  Maala With Earrings">Gold  Maala With Earrings</option>
+                    <option value="Gold Ring Size Adjustable">Gold Ring Size Adjustable</option>
+                    <option value="Gold Plated Bangles">Gold Plated Bangles</option>
+                    <option value="Gold Locket Set">Gold Locket Set</option>
+                    <option value="Gold Ring">Gold Ring</option>
+                    <option value="Gold Bangles Set">Gold Bangles Set</option>
+                    <option value="Gold Necklace & Earrings">Gold Necklace & Earrings</option>
+                    <option value="Gold Earrings">Gold Earrings</option>
+                    <option value="Ananya Gold Earrings"> Ananya Gold Earrings</option>
+                    <option value="Necklace in 18K Yellow Gold"> Necklace in 18K Yellow Gold</option>
+                    <option value="Ananya Bangle In 18K Gold">Ananya Bangle In 18K Gold</option>
+                    <option value="Ananya Diamond Necklace & Earring In 18K Gold">Ananya Diamond Necklace & Earring In 18K Gold</option>
+                    <option value="Gilded Gold Bangles">Gilded Gold Bangles</option>
+                    <option value="Zirconia Radiance Gold Earrings">Zirconia Radiance Gold Earrings</option>
+                    <option value="Moon Gold Set">Moon Gold Set</option>
+                    <option value="Loops Gold Baali">Loops Gold Baali</option>
+                    
+                </select>
+                </li>
+                <li class="list-group-item">
+                    <img  src="img/Jewelry cards.jpg" style="width: 300px; height: 300px;" class="img-fluid ms-2" alt="" id="img3">
+                </li>
+                <li class="list-group-item">
+                    <span id="brand3" style="font-size: 1.2rem;font-family: Georgia, 'Times New Roman', Times, serif;" class="d-flex justify-content-start align-items-start ">Brand</span>
+                </li>
+                <li class="list-group-item">
+                    <span id="details3" style="font-size: 1.2rem;font-family: Georgia, 'Times New Roman', Times, serif;" class="d-flex justify-content-start align-items-start ">Details</span>
+                </li>
+                <li class="list-group-item">
+                    <span id="price3" style="font-size: 1.2rem;font-family: Georgia, 'Times New Roman', Times, serif;" class="d-flex justify-content-start align-items-start " >Price</span>
+                </li>
+               
+              </ul> 
+            </div>
+            <div class="col--lg-4 col-md-4 sm-12">
+       
+                <ul class="list-group">
+                    <li class="list-group-item">
+                    <select id="p2" style="color: white; background-color: black; font-size:1rem; width: 100%; font-family: Georgia, 'Times New Roman', Times, serif;" onchange="cmprac()" >
+                        <option value="PRECIOUS"  style="text-align: center;font-size: 1.2rem; font-family: Georgia, 'Times New Roman', Times, serif;"> PRECIOUS</option>
+                        <option value="OSE Bracelet in Diamond">OSE Bracelet in Diamond</option>
+                        <option value="OneSixEight Diamond Earrings">OneSixEight Diamond Earrings</option>
+                        <option value="OneSixEight Diamond Pendant">OneSixEight Diamond Pendant</option>
+                        <option value="OneSixEight Diamond Ring">OneSixEight Diamond Ring</option>
+                        <option value="Diamond Earrings">Diamond Earrings</option>
+                        <option value="Diamond Bracelet">Diamond Bracelet</option>
+                        <option value="Diamond Ring">Diamond Ring</option>
+                        <option value="Diamond Necklace & Earrings">Diamond Necklace & Earrings </option>
+                        <option value="Diamond Openable Bangles"> Diamond Openable Bangles</option>
+                        <option value="Diamond Necklace Set"> Diamond Necklace Set</option>
+                        <option value="Diamond Locket Set">Diamond Locket Set</option>
+                        <option value="Zirconia Stardust Ring"> Zirconia Stardust Ring </option>
+                        <option value="Diamond Special Ring">Diamond Special Ring</option>
+                        <option value="Ivy Silver Crown"> Ivy Silver Crown</option>
+                        <option value="Amethyst Zirconia Harmony Silver Set">Amethyst Zirconia Harmony Silver Set</option>
+                        <option value="Amethyst Whispers Silver Necklace">Amethyst Whispers Silver Necklace</option>
+                        </select>
+                    </li>
+                    <li class="list-group-item">
+                        <img src="img/Jewelry cards.jpg" style="width: 300px; height: 300px;" class="img-fluid ms-2" alt="" id="img4" >
+                    </li>
+                    <li class="list-group-item">
+                        <span id="brand4" style="font-size: 1.2rem;font-family: Georgia, 'Times New Roman', Times, serif;" class="d-flex justify-content-start align-items-start " >Brand</span>
+                    </li>
+                    <li class="list-group-item">
+                        <span id="details4" style="font-size: 1.2rem;font-family: Georgia, 'Times New Roman', Times, serif;" class="d-flex justify-content-start align-items-start " >Details</span>
+                    </li>
+                    <li class="list-group-item">
+                        <span id="price4" style="font-size: 1.2rem;font-family: Georgia, 'Times New Roman', Times, serif;" class="d-flex justify-content-start align-items-start " >Price</span>
+                    </li>
+                   
+                  </ul>
+                </div>
+
+                <div class="col--lg-4 col-md-4 sm-12 ">
+       
+                    <ul class="list-group">
+                        <li class="list-group-item">
+							<select id="p3" style="color: white; background-color: black; font-size:1rem; width: 100%; font-family: Georgia, 'Times New Roman', Times, serif;" onchange="cmprac()">
+         <option value="ARTIFICIAL"  style="text-align: center;font-size: 1.2rem; font-family: Georgia, 'Times New Roman', Times, serif;">ARTIFICIAL</option>
+<option value="Rangoli Bracelet">Rangoli Bracelet</option>
+                            <option value="Rangoli Necklace">Rangoli Necklace</option>
+                            <option value="Rangoli Necklace Set">Rangoli Necklace Set</option>
+                            <option value="Rangoli Earrings">Rangoli Earrings</option>
+                            <option value="Pearl Bracelet">Pearl Bracelet</option>
+                            <option value="Pearls Locket Chain">Pearls Locket Chain</option>
+                            <option value="Zari Earrings">Zari Earrings</option>
+                            <option value="Zari Ring">Zari Ring</option>
+                            <option value="Stone Bangles Set"> Stone Bangles Set </option>
+                            <option value="Hand Made Necklace Set">Hand Made Necklace Set </option>
+                            <option value="Crush Baali Style Tops">Crush Baali Style Tops</option>
+                            <option value="Stone Locket Set">Stone Locket Set</option>
+                            <option value="Noratan Openable Bangles pair">Noratan Openable Bangles pair</option>
+                            <option value="Egyptian Rings">Egyptian Rings</option>
+                            <option value="Zarcon Necklace Set NJ-1499">Zarcon Necklace Set NJ-1499</option>
+                            <option value="Egyptian Locket Set">Egyptian Locket Set</option>
+                            
+                        </select>
+                        </li>
+						<li class="list-group-item">
+							<img src="img/Jewelry cards.jpg" style="width: 300px; height: 300px; display: flex;flex-wrap: wrap;"  class="img-fluid  ms-2" alt="" id="img5">
+						</li>
+						<li class="list-group-item">
+							<span id="brand5" style="font-size: 1.2rem;font-family: Georgia, 'Times New Roman', Times, serif;" class="d-flex justify-content-start align-items-start "  >Brand</span>
+						</li>
+						<li class="list-group-item">
+							<span id="details5"  style="font-size: 1.2rem;font-family: Georgia, 'Times New Roman', Times, serif;" class="d-flex justify-content-start align-items-start ">Details</span>
+						</li>
+						<li class="list-group-item">
+							<span id="price5" style="font-size: 1.2rem;font-family: Georgia, 'Times New Roman', Times, serif;" class="d-flex justify-content-start align-items-start " >Price</span>
+						</li>
+					   
+                       
+                      </ul>
+                    </div>
+
+        </div>
+    </div>
+
+
+	<!-- customer services  -->
+	<div style="margin-top: 220px;" class="row align-items-center bg-light">
+		<div  class="col-lg-4 col-md-4 col-sm-12" id="colc">
+		  <i  class="fa-solid fa-phone"></i>
+	<H6>CUSTOMER SERVICE</H6>
+		  <h8 id="hab">Satisfaction Guranteed</h8>
+		</div>
+	  
+		<div  class="col-lg-4 col-md-4 col-sm-12" id="colc">
+		  <i class="fa-solid fa-van-shuttle"></i>
+		  <H6 >FREE DELIVERY</H6>
+		  <h8 id="hab">Deliver across WorldWide</h8>
+		</div>
+	  
+	  
+		<div  class="col-lg-4 col-md-4 col-sm-12" id="colc">
+		  <i class="fa-solid fa-rotate-left"></i>
+	  
+		  <H6 >RETURNS</H6>
+		  <h8 id="hab">Return items within 30 days</h8>
+		</div>
+		
+	  </div>
+	
+	<!-- footer  -->
+	<footer>
+		<div id="ft" class="container-fluid  mt-5">
+	  <h2  class="mt-5">Join the A-list and Save 15% Off Your First Order</h2>
+	  <h5>Get the latest news and offers straight to your inbox</h5>
+	  <div class="container">
+	  <div class="row">
+		<div class="col">
+		  <input item id="em" type="email" name="" id="" placeholder="Email address">
+		  
+		</div>
+		<!-- <div class="col"> -->
+		  <button id="btn" >Sign Up</button>
+		<!-- </div> -->
+	  </div>
+	  </div>
+	  <div id="row"  class="row mt-3 ">
+		<div  id="col" class="col-lg-12 col-md-12 col-sm-12">
+		<a  href="https://www.facebook.com"><i class="fa-brands fa-facebook-f text-light"></i></a>
+		<a  href="https://www.twitter.com"><i class="fa-brands fa-twitter text-light"></i></a>
+		<a href="https://www.google.com"><i class="fa-brands fa-google text-light"></i></a>
+		<a  href="https://www.instagram.com"><i class="fa-brands fa-instagram text-light"></i></a>
+	  </div>
+	  </div>
+	  <div class="row">
+		<div class="col-lg-4 col-md-3 col-sm-6 mt-3 mb-2" id="colft">
+		  <h5>About</h5>
+		  <a href="index.html"><p>Home</p></a>
+		  <a  href="gallery.html"><p>Gallery</p></a>
+		  <a  href="about.html"><p>About Us</p></a>
+		  
+		</div>
+		<div class="col-lg-4 col-md-3 col-sm-6  mt-3 mb-2" id="colft">
+		  <h5>Help</h5>
+		  <a  href="feedback.html"><p>Feedback</p></a>
+		  <a href="contact.html"><p>Contact Us</p></a>
+		</div>
+		<!-- brands  -->
+		<div class="col-lg-4 col-md-3 col-sm-6  mt-3 mb-2" id="colft">
+		  <h5>Brands</h5>
+		  <a href="hanifj.html"><p>Hanif Jewellers</p></a>
+		  <a href="almasj.html"><p>Damas Jewelers</p></a>
+		  <a href="almasj.html"><p>Almas Jewellers</p></a>
+		<a  href="ary.html"><p>ARY Jewellers	</p></a>
+		<a  href="nayabj.html"><p>Nayab Jewellers</p></a>
+	  
+		<a href="fazalj.html"><p>Fazal Jewellers</p></a>
+		</div>
+		
+		
+		
+		<div class="col-12 mb-3" id="colco">
+		  <i class="fa fa-copyright" aria-hidden="true"></i>
+		  <p>2024 pascal'sImitationJewellry</p>
+		  
+		</div>
+		
+	  
+	  
+	  
+	  </div>
+	  
+	  </footer>
+	
+</body>
+
+<script>
+    function cmprac()
+{
+	var pro1 = document.getElementById("p1").value;	
+	var pro2 = document.getElementById("p2").value;
+    var pro3 = document.getElementById("p3").value;
+
+	if (pro2=="OneSixEight Diamond Earrings" )
+	{
+		document.getElementById("img4").src="img/smc.webp";
+		document.getElementById("brand4").innerHTML= " Brand : damas";
+		document.getElementById("details4").innerHTML="Name : OneSixEight Diamond Earrings";
+		document.getElementById("price4").innerHTML="Price : 6155.0 PKR ";
+
+	}
+	else if (pro2=="OSE Bracelet in Diamond")
+	{document.getElementById("img4").src="img/preb.webp";
+		document.getElementById("brand4").innerHTML= "damas";
+		document.getElementById("details4").innerHTML="Name : OSE Bracelet in Diamond";
+		document.getElementById("price4").innerHTML="Price : 3,440.00 PKR";
+
+	}
+	else if (pro2=="OneSixEight Diamond Pendant")
+	{document.getElementById("img4").src="img/pre3.webp";
+		document.getElementById("brand4").innerHTML= "Brand : damas";
+		document.getElementById("details4").innerHTML="Name : OneSixEight Diamond Pendant";
+		document.getElementById("price4").innerHTML="Price : 3,179.00 PKR ";
+
+
+			}
+
+			else if (pro2=="OneSixEight Diamond Ring")
+	{document.getElementById("img4").src="img/PRE4.webp";
+		document.getElementById("brand4").innerHTML= "Brand : damas";
+		document.getElementById("details4").innerHTML="Name : OneSixEight Diamond Ring";
+		document.getElementById("price4").innerHTML="Price : 2,137,000 PKR ";
+
+
+			}
+ 
+			else if (pro2=="Zirconia Stardust Ring")
+	{document.getElementById("img4").src="img/alm-pre2.webp";
+		document.getElementById("brand4").innerHTML= "Brand : Almas";
+		document.getElementById("details4").innerHTML="Name : Zirconia Stardust Ring";
+		document.getElementById("price4").innerHTML="Price : 2,00,000 PKR ";
+
+
+			}
+			else if (pro2=="Amethyst Whispers Silver Necklace")
+	{document.getElementById("img4").src="img/alm-art6.jpg";
+		document.getElementById("brand4").innerHTML= "Brand : Almas";
+		document.getElementById("details4").innerHTML="Name : Amethyst Whispers Silver Necklace";
+		document.getElementById("price4").innerHTML="Price : 3,89,000 PKR ";
+
+
+			}
+
+			else if (pro2=="Amethyst Zirconia Harmony Silver Set")
+	{document.getElementById("img4").src="img/alm-art7.jpg";
+		document.getElementById("brand4").innerHTML= "Brand : Almas";
+		document.getElementById("details4").innerHTML="Name : Amethyst Zirconia Harmony Silver Set";
+		document.getElementById("price4").innerHTML="Price : 3,45,000 PKR ";
+
+
+			}
+			else if (pro2=="Ivy Silver Crown")
+	{document.getElementById("img4").src="img/alm_pre1.webp";
+		document.getElementById("brand4").innerHTML= "Brand : Almas";
+		document.getElementById("details4").innerHTML="Name : Ivy Silver Crown";
+		document.getElementById("price4").innerHTML="Price : 3,44,000 PKR ";
+
+
+			}
+			else if (pro1=="Zirconia Radiance Gold Earrings")
+	{document.getElementById("img3").src="img/alm_sm2.webp";
+		document.getElementById("brand3").innerHTML= "Brand : Almas";
+		document.getElementById("details3").innerHTML="Name : Zirconia Radiance Gold Earrings";
+		document.getElementById("price3").innerHTML="Price : 1,10,000 PKR ";
+
+
+			}
+			else if (pro1=="Gilded Gold Bangles")
+	{document.getElementById("img3").src="img/alm_sm1.webp";
+		document.getElementById("brand3").innerHTML= "Brand : Almas";
+		document.getElementById("details3").innerHTML="Name : Gilded Gold Bangles";
+		document.getElementById("price3").innerHTML="Price : 1,30,000 PKR ";
+
+
+			}
+			else if (pro1=="Moon Gold Set")
+	{document.getElementById("img3").src="img/alm_sm3.webp";
+		document.getElementById("brand3").innerHTML= "Brand : Almas";
+		document.getElementById("details3").innerHTML="Name : Moon Gold Set";
+		document.getElementById("price3").innerHTML="Price : 1,27,000 PKR ";
+
+
+			}
+			else if (pro1=="Loops Gold Baali")
+	{document.getElementById("img3").src="img/alm_sm4.webp";
+		document.getElementById("brand3").innerHTML= "Brand : Almas";
+		document.getElementById("details3").innerHTML="Name : Loops Gold Baali ";
+		document.getElementById("price3").innerHTML="Price : 1,50,000 PKR ";
+
+
+			}
+			else if (pro1=="Ananya Gold Earrings")
+	{document.getElementById("img3").src="img/ear1.png";
+		document.getElementById("brand3").innerHTML= "Brand : Damas";
+		document.getElementById("details3").innerHTML="Name : Ananya Gold Earrings ";
+		document.getElementById("price3").innerHTML="Price : 1,30,000 PKR ";
+
+
+			}
+			else if (pro1=="Necklace in 18K Yellow Gold")
+	{document.getElementById("img3").src="img/sm1.png";
+		document.getElementById("brand3").innerHTML= "Brand : Damas";
+		document.getElementById("details3").innerHTML="Name : Necklace in 18K Yellow Gold";
+		document.getElementById("price3").innerHTML="Price : 1,10,000  PKR ";
+
+
+			}
+			else if (pro1=="Ananya Bangle In 18K Gold")
+	{document.getElementById("img3").src="img/SM5.png";
+		document.getElementById("brand3").innerHTML= "Brand : Damas";
+		document.getElementById("details3").innerHTML="Name : Ananya Bangle In 18K Gold";
+		document.getElementById("price3").innerHTML="Price : 1,27,000 PKR ";
+
+
+			}
+			else if (pro1=="Ananya Diamond Necklace & Earring In 18K Gold")
+	{document.getElementById("img3").src="img/SM4.png";
+		document.getElementById("brand3").innerHTML= "Brand : Damas";
+		document.getElementById("details3").innerHTML="Name : Ananya Diamond Necklace & Earring In 18K Gold ";
+		document.getElementById("price3").innerHTML="Price : 1,50,000 PKR ";
+
+
+			}
+			else if (pro3=="Noratan Openable Bangles pair")
+	{document.getElementById("img5").src="img/alm-art1.webp";
+		document.getElementById("brand5").innerHTML= "Brand :Almas ";
+		document.getElementById("details5").innerHTML="Name : Noratan Openable Bangles pair ";
+		document.getElementById("price5").innerHTML="Price : 5,000 PKR ";
+
+
+			}
+			else if (pro3=="Egyptian Rings")
+	{document.getElementById("img5").src="img/alm-art2.webp";
+		document.getElementById("brand5").innerHTML= "Brand : Almas";
+		document.getElementById("details5").innerHTML="Name : Egyptian Rings";
+		document.getElementById("price5").innerHTML="Price : 12,00 PKR ";
+
+
+			}
+			else if (pro3=="Zarcon Necklace Set NJ-1499")
+	{document.getElementById("img5").src="img/alm_art4.webp";
+		document.getElementById("brand5").innerHTML= "Brand : Almas";
+		document.getElementById("details5").innerHTML="Name : Zarcon Necklace Set NJ-1499 ";
+		document.getElementById("price5").innerHTML="Price : 30,000 PKR ";
+
+
+			}
+			else if (pro3=="Egyptian Locket Set")
+	{document.getElementById("img5").src="img/alm-art8.jpg";
+		document.getElementById("brand5").innerHTML= "Brand : Almas";
+		document.getElementById("details5").innerHTML="Name : Egyptian Locket Set ";
+		document.getElementById("price5").innerHTML="Price : 15,000  PKR ";
+
+
+			}
+			else if (pro3=="Rangoli Bracelet")
+	{document.getElementById("img5").src="img/art5.png";
+		document.getElementById("brand5").innerHTML= "Brand : Damas";
+		document.getElementById("details5").innerHTML="Name : Rangoli Bracelet ";
+		document.getElementById("price5").innerHTML="Price : 5,000 PKR ";
+
+
+			}
+			else if (pro3=="Rangoli Necklace")
+	{document.getElementById("img5").src="img/art2.png";
+		document.getElementById("brand5").innerHTML= "Brand : Damas";
+		document.getElementById("details5").innerHTML="Name : Rangoli Necklace";
+		document.getElementById("price5").innerHTML="Price : 20,000 PKR ";
+
+
+			}
+			else if (pro3=="Rangoli Necklace Set")
+	{document.getElementById("img5").src="img/art3.png";
+		document.getElementById("brand5").innerHTML= "Brand : Damas";
+		document.getElementById("details5").innerHTML="Name : Rangoli Necklace Set ";
+		document.getElementById("price5").innerHTML="Price : 30,000 PKR ";
+
+
+			}
+			else if (pro3=="Rangoli Earrings")
+	{document.getElementById("img5").src="img/art4.png";
+		document.getElementById("brand5").innerHTML= "Brand : Damas";
+		document.getElementById("details5").innerHTML="Name : Rangoli Earrings ";
+		document.getElementById("price5").innerHTML="Price : 15,000 PKR ";
+
+
+			}
+			else if (pro1=="Gold Bangles Set")
+	{document.getElementById("img3").src="img/f9.webp";
+		document.getElementById("brand3").innerHTML= "Brand : Fazal";
+		document.getElementById("details3").innerHTML="Name : Gold Bangles Set ";
+		document.getElementById("price3").innerHTML="Price :  50,899 PKR ";
+
+
+			}
+			else if (pro1=="Gold Ring")
+	{document.getElementById("img3").src="img/f10.webp";
+		document.getElementById("brand3").innerHTML= "Brand : Fazal";
+		document.getElementById("details3").innerHTML="Name : Gold Ring";
+		document.getElementById("price3").innerHTML="Price : 20,500 PKR ";
+
+
+			}
+			else if (pro1=="Gold Necklace & Earrings")
+	{document.getElementById("img3").src="img/f11.webp";
+		document.getElementById("brand3").innerHTML= "Brand : Fazal";
+		document.getElementById("details3").innerHTML="Name : Gold Necklace & Earrings";
+		document.getElementById("price3").innerHTML="Price : 107,103 PKR ";
+
+
+			}
+			else if (pro1=="Gold Earrings")
+	{document.getElementById("img3").src="img/f12.webp";
+		document.getElementById("brand3").innerHTML= "Brand : Fazal";
+		document.getElementById("details3").innerHTML="Name : Gold Earrings";
+		document.getElementById("price3").innerHTML="Price : 25,399 PKR ";
+
+
+			}
+			else if (pro1=="Gold  Maala With Earrings")
+	{document.getElementById("img3").src="img/na2.webp";
+		document.getElementById("brand3").innerHTML= "Brand : Nayab";
+		document.getElementById("details3").innerHTML="Name : Gold  Maala With Earrings";
+		document.getElementById("price3").innerHTML="Price : 150,599 PKR ";
+
+
+			}
+			else if (pro1=="Gold Ring Size Adjustable")
+	{document.getElementById("img3").src="img/na3.webp";
+		document.getElementById("brand3").innerHTML= "Brand : Nayab";
+		document.getElementById("details3").innerHTML="Name : Gold Ring Size Adjustable ";
+		document.getElementById("price3").innerHTML="Price : 25,900 PKR ";
+
+
+			}
+			else if (pro1=="Gold Plated Bangles")
+	{document.getElementById("img3").src="img/na4.webp";
+		document.getElementById("brand3").innerHTML= "Brand : Nayab";
+		document.getElementById("details3").innerHTML="Name : Gold Plated Bangles";
+		document.getElementById("price3").innerHTML="Price : 58,103 PKR ";
+
+
+			}
+			else if (pro1=="Gold Locket Set")
+	{document.getElementById("img3").src="img/na5.webp";
+		document.getElementById("brand3").innerHTML= "Brand : Nayab";
+		document.getElementById("details3").innerHTML="Name : Gold Locket Set";
+		document.getElementById("price3").innerHTML="Price : 80 ,999 PKR ";
+
+
+			}
+			else if (pro2=="Diamond Openable Bangles")
+	{document.getElementById("img4").src="img/na6.webp";
+		document.getElementById("brand4").innerHTML= "Brand : Nayab";
+		document.getElementById("details4").innerHTML="Name : Diamond Openable Bangles";
+		document.getElementById("price4").innerHTML="Price : 200,900 PKR ";
+
+
+			}
+			else if (pro2=="Diamond Necklace Set")
+	{document.getElementById("img4").src="img/na7.webp";
+		document.getElementById("brand4").innerHTML= "Brand : Nayab";
+		document.getElementById("details4").innerHTML="Name : Diamond Necklace Set";
+		document.getElementById("price4").innerHTML="Price : 550,000 PKR ";
+
+
+			}
+			else if (pro2=="Diamond Locket Set")
+	{document.getElementById("img4").src="img/na8.webp";
+		document.getElementById("brand4").innerHTML= "Brand : Nayab";
+		document.getElementById("details4").innerHTML="Name : Diamond Locket Set";
+		document.getElementById("price4").innerHTML="Price : 350,000 PKR ";
+
+
+			}
+			else if (pro2=="Diamond Ring")
+	{document.getElementById("img4").src="img/na9.webp";
+		document.getElementById("brand4").innerHTML= "Brand : Nayab";
+		document.getElementById("details4").innerHTML="Name : Diamond Ring";
+		document.getElementById("price4").innerHTML="Price : 259,000 PKR ";
+
+
+			}
+			else if (pro2=="Diamond Earrings")
+	{document.getElementById("img4").src="img/f5.webp";
+		document.getElementById("brand4").innerHTML= "Brand : Fazal";
+		document.getElementById("details4").innerHTML="Name : Diamond Earrings";
+		document.getElementById("price4").innerHTML="Price : 250,000 PKR ";
+
+
+			}
+			else if (pro2=="Diamond Bracelet")
+	{document.getElementById("img4").src="img/f6.webp";
+		document.getElementById("brand4").innerHTML= "Brand : Fazal";
+		document.getElementById("details4").innerHTML="Name : Diamond Bracelet";
+		document.getElementById("price4").innerHTML="Price : 373,000 PKR ";
+
+
+			}
+			else if (pro2=="Diamond Necklace & Earrings")
+	{document.getElementById("img4").src="img/f8.webp";
+		document.getElementById("brand4").innerHTML= "Brand : Fazal";
+		document.getElementById("details4").innerHTML="Name : Diamond Necklace & Earrings";
+		document.getElementById("price4").innerHTML="Price : 499,000 PKR ";
+
+
+			}
+			else if (pro2=="Diamond Special Ring")
+	{document.getElementById("img4").src="img/f7.webp";
+		document.getElementById("brand4").innerHTML= "Brand : Fazal";
+		document.getElementById("details4").innerHTML="Name : Diamond Special Ring ";
+		document.getElementById("price4").innerHTML="Price : 200,000 PKR ";
+
+
+			}
+
+			else if (pro3=="Pearl Bracelet")
+	{document.getElementById("img5").src="img/f13.webp";
+		document.getElementById("brand5").innerHTML= "Brand : Fazal";
+		document.getElementById("details5").innerHTML="Name : Pearl Bracelet ";
+		document.getElementById("price5").innerHTML="Price : 5,999 PKR ";
+
+
+			}
+
+			else if (pro3=="Pearls Locket Chain")
+	{document.getElementById("img5").src="img/f14.webp";
+		document.getElementById("brand5").innerHTML= "Brand : Fazal";
+		document.getElementById("details5").innerHTML="Name :  Pearls Locket Chain";
+		document.getElementById("price5").innerHTML="Price : 9,999 PKR ";
+
+
+			}
+
+			else if (pro3=="Zari Earrings")
+	{document.getElementById("img5").src="img/f15.webp";
+		document.getElementById("brand5").innerHTML= "Brand : Fazal";
+		document.getElementById("details5").innerHTML="Name :  Zari Earrings";
+		document.getElementById("price5").innerHTML="Price : 4,879 PKR ";
+
+
+			}
+
+			else if (pro3=="Zari Ring")
+	{document.getElementById("img5").src="img/f16.webp";
+		document.getElementById("brand5").innerHTML= "Brand : Fazal";
+		document.getElementById("details5").innerHTML="Name : Zari Ring ";
+		document.getElementById("price5").innerHTML="Price : 3,455 PKR ";
+
+
+			}
+
+			else if (pro3=="Stone Bangles Set")
+	{document.getElementById("img5").src="img/na10.webp";
+		document.getElementById("brand5").innerHTML= "Brand : Nayab";
+		document.getElementById("details5").innerHTML="Name : Stone Bangles Set ";
+		document.getElementById("price5").innerHTML="Price : 6,599 PKR ";
+
+
+			}
+
+			else if (pro3=="Hand Made Necklace Set")
+	{document.getElementById("img5").src="img/na11.webp";
+		document.getElementById("brand5").innerHTML= "Brand : Nayab";
+		document.getElementById("details5").innerHTML="Name : Hand Made Necklace Set ";
+		document.getElementById("price5").innerHTML="Price : 8,699 PKR ";
+
+
+			}
+
+			else if (pro3=="Crush Baali Style Tops")
+	{document.getElementById("img5").src="img/na12.webp";
+		document.getElementById("brand5").innerHTML= "Brand : Nayab";
+		document.getElementById("details5").innerHTML="Name : Crush Baali Style Tops ";
+		document.getElementById("price5").innerHTML="Price : 2,300 PKR ";
+
+
+			}
+
+			else if (pro3=="Stone Locket Set")
+	{document.getElementById("img5").src="img/na13.webp";
+		document.getElementById("brand5").innerHTML= "Brand : Nayab";
+		document.getElementById("details5").innerHTML="Name :  Stone Locket Set";
+		document.getElementById("price5").innerHTML="Price : 3,500 PKR ";
+
+
+			}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		return cmprc;
+}
+</script>
+
+</html>

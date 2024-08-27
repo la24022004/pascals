@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<style>
+   
+    </style>
+<body>
+    <div style="background-color: white;" class="container-fluid  d-none d-md-block">
+        <div class="row">
+            <div class="col-7 d-flex  justify-content-end">
+                <img src="img/pascal.PNG" alt="" width="250" height="150" class=" ">
+            </div>
+            <div class="col-5 ">
+
+                <ul class="nav ms-auto justify-content-end align-items-center mt-3">
+                  <button id="btn" type="button" class="btn btn-dark mt-5 mx-2 " data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Log In
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade bg-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog bg-dark">
+                      <div class="modal-content bg-secondary text-light">
+                        <div class="modal-header">
+                          <h2 class="modal-title text-light Login " id="exampleModalLabel">Log In</h2>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <input type="text" class="form-control mt-2" id="exampleInputEmail1" placeholder="Enter Your Full Name">
+                            <input type="text" class="form-control mt-5" id="exampleInputEmail1" placeholder="Enter Your Phone Number">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Login</button>
+                        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark Login" href="https://www.whatsapp.com"><i class="fa-brands fa-whatsapp mt-5 "></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark Login" href="https://www.twitter.com"><i class="fa-brands fa-twitter mt-5 mx-0"></i></a>
+
+                    </li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+    <nav style="background-color: black;" class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand d-block d-md-none " href="#">
+        <img src="img/pascal.PNG" alt="" width="200" height="50" class=" ">
+    </a>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon bg-light"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li style="color: rgb(253, 246, 246);font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item">
+          <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li style="color: black;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item">
+          <a class="nav-link active text-light" href="gallery.html">Gallery</a>
+        </li>
+        <li style="color: black;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Brands
+          </a>
+          <ul class="dropdown-menu dropdown " aria-labelledby="navbarDropdown" >
+            <li><a class="dropdown-item text-dark" href="hanifj.html">Hanif Jewellers</a></li>
+            <li><a class="dropdown-item text-dark" href="damasj.html">Damas Jewelers</a></li>
+            <li><a class="dropdown-item text-dark" href="almasj.html">Almas Jewellery</a></li>
+            <li><a class="dropdown-item text-dark" href="ary.html">ARY Jewellers	</a></li>
+            <li><a class="dropdown-item text-dark" href="nayabj.html">Nayab Jewellery</a></li>
+            <li><a class="dropdown-item text-dark" href="fazalj.html">Fazal Jewellers</a></li>
+          </ul>
+        </li>
+        <li style="color:white;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;" class="nav-item">
+            <a class="nav-link active text-light" href="contact.html">Contact Us</a>
+        </li>
+        <li style="color: white;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item">
+            <a class="nav-link active text-light" href="about.html">About us</a>
+        </li>
+        <li style="color: white;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item">
+            <a class="nav-link active text-light" href="feedback.html">Feedback Form</a>
+        </li>
+        <li style="color: white;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item">
+            <a class="nav-link active text-light " href="final.html">Comparison of Products</a>
+        </li>
+      </ul>
+    
+    </div>
+  </div>
+  </nav>
+  <div id="container-fluid" class="container-fluid">
+    <div class="row ">
+        <div class="col-lg-4 col-md-6  col-sm-12  ">
+    <img src="img/about1-removebg-preview.png"  class="img-fluid blue" alt="...">
+</div>
+<div class="col-lg-8 col-md-8 col-sm-12    ">
+    <h2 class="mt-2" id="h2">Who <br> Are We?  <br></h2>
+    <h3 class="mt-4" id="h3">PASCAL IMITATION JEWELLERY</h3>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="row mt-3">
+    <div class="col-lg-6 col-md-6 col-sm-12">
+        <h1 id="h1">WE ARE THAT <br> INCLUSIVE BRAND <br> FOR THOSE THAT <br> REFUSE TO FIT IN! <br> <span> THINK OF US AS YOUR <br> fashion guardian angel </span>
+        </h1>
+        <h2 class="mt-5 h2">WHO ARE PASCAL IMITATION JEWELLERY?
+        </h2>
+        <h4 class="h4">Statement jewellery and accessories for queens and   rebels that refuse to fit in.
+
+            Pascal Imitation Jewelleryis a Pakistan based jewellery and accessory brand that fuses luxurious exclusivity with  swag at affordable prices. The brand embodies br empowerment, individuality in a world full of sheep and dares you to follow your own set of rules! We see you. Our mission is to make jewellery and accessories  accessible, fun and fly. Our aim is to ensure you look  fresh to death. Be confident. We encourage you to be  who you want to be, unapologetically.</h4>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12">
+        <img src="img/about2.jpg" width="500px"  class="img-fluid " alt="...">
+    </div>
+</div>
+<div class="row mt-5">
+    <div class="col-lg-6 col-md-6 col-sm-12 ">
+        <img src="img/about4.jpg"  class="img-fluid img1" alt="...">
+
+
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+        <h2 class="h">OUR PHILOSOPHY
+        </h2>
+        <h4 class="h4 mt-3">Founded in 2016. Designed in Pakistan. Inspired by the world and designed for all. (Hello) graceful, awkward, young, old, fashionista, plain Jane, glam, tom-boy, gym bunny, go-getter and wonder woman. We do this for you.
+
+            Our philosophy’s pretty simple: go hard or go home!</h4>
+            <h1 class="mt-5" id="h">WIN </h1> <h2 id="he2"> <br>Have fun,</h2> <h1 id="he"> <br> SLAY</h1>
+    </div>
+</div>
+<div class="row mt-3">
+  <div class="col-lg-6 col-md-6 col-sm-12 mt-5">
+<h2 class="h">OUR CHARITY STRATEGY
+</h2>
+<h4 class="h4 mt-3">It’s important to give back, that’s why we have set up House of Pascal’s charity programme to raise money and awareness for causes close to our hearts, such as Cervical Cancer and Sickle Cell.
+
+</h4>
+<h1 class="ch mt-2">IT’S BETTER TO GIVE <br> THAN TO RECEIVE
+
+</h1>
+<h4 class="h4 mt-3">We always strive to do more; to make a real difference to the lives of people around us and across the globe.
+
+</h4>
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-12mt-3">
+    <img src="img/charity1.webp"  class="img-fluid img2" alt="...">
+
+  </div>
+</div>
+<div class="row mt-3">
+  <div class="col-lg-6 col-md-6 col-sm-12 mt-3">
+    <img src="img/about5.jpg"  class="img-fluid img3" alt="...">
+
+  </div>
+  <div class="col-lg-6 col-md-6 col-sm-12 mt-4">
+    <h2 class="h">THE LAW THAT WE LIVE BY
+    </h2>
+    <h2 class="a4 mt-4">"IN ORDER TO BE <br> IRREPLACEABLE,
+    </h2>
+    
+    <h3 class="a5 mt-5 mx-5">ONE MUST ALWAYS BE DIFFERENT” </h3>
+  
+    
+  </div>
+  </div>
+</div>
+</div>
+<footer>
+    <div style="background-color: black;" class="container-fluid  mt-5">
+  <h2 style="display: flex; flex-wrap: wrap;margin: auto;justify-content: center; align-items: center;font-size: 1.5rem;color: white; margin-top: 10px;font-family: Georgia, 'Times New Roman', Times, serif; padding-top: 50px;" class="mt-5">Join the A-list and Save 15% Off Your First Order</h2>
+  <h5 style="display: flex; flex-wrap: wrap;margin: auto;justify-content: center; align-items: center;font-size: 1rem;color: white;padding: 20px; font-family: Georgia, 'Times New Roman', Times, serif;">Get the latest news and offers straight to your inbox</h5>
+  <div class="container">
+  <div class="row">
+    <div class="col">
+      <input  style="width: 95%; height: 40px; display: flex; flex-wrap: wrap; margin: auto;justify-content: center;align-items: center; border: 2px solid white; outline: none;" type="email" name="" id="" placeholder="Email address">
+      
+    </div>
+    <!-- <div class="col"> -->
+      <button style="width: 7vw; height: 6vh;margin: 0px;  display: flex; flex-wrap: wrap; margin: auto;justify-content: center;align-items: center;background-color: black;color: white; border: 1px solid white;">Sign Up</button>
+    <!-- </div> -->
+  </div>
+  </div>
+  <div style="display: flex; margin: auto; justify-content: center;align-items: center;" class="row mt-3 ">
+    <div style="display: flex; margin: auto; justify-content: center; align-items: center;" class="col">
+    <a style="padding: 15px;" href="https://www.facebook.com"><i class="fa-brands fa-facebook-f text-light"></i></a>
+    <a style="padding: 15px;" href="https://www.twitter.com"><i class="fa-brands fa-twitter text-light"></i></a>
+    <a style="padding: 15px;" href="https://www.google.com"><i class="fa-brands fa-google text-light"></i></a>
+    <a style="padding: 15px;" href="https://www.instagram.com"><i class="fa-brands fa-instagram text-light"></i></a>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-md-3 col-sm-6 mt-3 mb-2">
+      <h5 style="display: flex; margin: auto; justify-content: center; align-items: center; margin-bottom: 10px; color: white; font-family: Georgia, 'Times New Roman', Times, serif;">About</h5>
+      <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;" href="index.html "><p>Home</p></a>
+      <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;" href="gallery.html"><p>Gallery</p></a>
+      <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;" href="about.html"><p>About Us</p></a>
+      <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;" href="feedback.html"><p>Feedback Form</p></a>
+    </div>
+    <div class="col-lg-4 col-md-3 col-sm-6  mt-3 mb-2">
+      <h5 style="display: flex; margin: auto; justify-content: center; align-items: center;margin-bottom: 10px; color: white; font-family: Georgia, 'Times New Roman', Times, serif; text-align: justify;">Help</h5>
+      <!-- <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;margin-top: 10px;text-align: justify;" href=""><p>Privacy Policy</p></a> -->
+      <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;text-align: justify;" href="contact.html"><p>Contact Us</p></a>
+    </div>
+    <!-- brands  -->
+    <div class="col-lg-4 col-md-3 col-sm-6  mt-3 mb-2">
+      <h5 style="display: flex; margin: auto; justify-content: center; align-items: center;margin-bottom: 10px; color: white; font-family: Georgia, 'Times New Roman', Times, serif;">Brands</h5>
+      <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;text-align: justify;" href="hanifj.html"><p>Hanif Jewellers</p></a>
+      <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;text-align: justify;" href="damasj.html"><p>Damas Jewelers</p></a>
+      <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;text-align: justify;" href="almasj.html"><p>Almas Jewellery</p></a>
+    <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;text-align: justify;" href="ary.html"><p>ARY Jewellers	</p></a>
+    <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;text-align: justify;" href="nayabj.html"><p>Nayab Jewellery</p></a>
+  <!-- <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;text-align: justify;" href=""><p>Rabia Mustafa Jewellery</p></a> -->
+    <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;text-align: justify;" href="fazalj.html"><p>Fazal Jewellers</p></a>
+    </div>
+    
+    
+    
+    <div class="col-12 mb-3">
+      <i style="color: white;font-size: 1rem;display: flex;justify-content: center;align-items: center;"   class="fa fa-copyright" aria-hidden="true"></i>
+      <p style="color: white;font-size: 1rem;display: flex;justify-content: center;align-items: center;margin-top: 5px;">2024 pascal'sImitationJewellry</p>
+      
+    </div>
+    
+  
+  
+  
+  </div>
+  
+  </footer>
+</body>
+</html>

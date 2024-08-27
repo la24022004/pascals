@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style1.css">
+</head>
+<script>
+  function details(pimg,pprice,pdis,pbrand){
+    sessionStorage.setItem("p_imgsrc",pimg);
+    sessionStorage.setItem("p_price",pprice);
+    sessionStorage.setItem("p_details",pdis);
+    sessionStorage.setItem("p_brand",pbrand);
+
+    window.location.href="card.html";
+
+  }
+</script>
+<style>
+ 
+</style>
+<body>
+    <div style="background-color: white;" class="container-fluid  d-none d-md-block">
+        <div class="row">
+            <div class="col-7 d-flex  justify-content-end">
+                <img src="img/pascal.PNG" alt="" width="250" height="150" class=" ">
+            </div>
+            <div class="col-5 ">
+
+                <ul class="nav ms-auto justify-content-end align-items-center mt-3">
+                    <li class="nav-item">
+                      <button id="btn" type="button" class="btn btn-dark mt-5 mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Log In
+                      </button>
+                      
+                      <!-- Modal -->
+                      <div class="modal fade bg-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog bg-dark">
+                          <div class="modal-content bg-secondary text-light">
+                            <div class="modal-header">
+                              <h2 class="modal-title text-light Login " id="exampleModalLabel">Log In Form</h2>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <input type="text" class="form-control mt-2" id="exampleInputEmail1" placeholder="Enter Your Email">
+                                <input type="text" class="form-control mt-5" id="exampleInputEmail1" placeholder="Enter Your Password">
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Login</button>
+                            
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark Login" href="https://www.whatsapp.com"><i class="fa-brands fa-whatsapp mt-5 "></i></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-dark Login" href="https://www.twitter.com"><i class="fa-brands fa-twitter mt-5 mx-0"></i></a>
+
+                    </li>
+                  </ul>
+            </div>
+        </div>
+    </div>
+    <nav style="background-color: black;" class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand d-block d-md-none " href="#">
+        <img src="img/pascal.PNG" alt="" width="200" height="50" class=" ">
+    </a>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon bg-light"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li style="color: rgb(253, 246, 246);font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item">
+          <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li style="color: black;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item">
+          <a class="nav-link active text-light" href="gallery.html">Gallery</a>
+        </li>
+        <li style="color: black;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Brands
+          </a>
+          <ul class="dropdown-menu dropdown " aria-labelledby="navbarDropdown" >
+            <li><a class="dropdown-item text-dark" href="hanifj.html">Hanif Jewellers</a></li>
+            <li><a class="dropdown-item text-dark" href="damasj.html">Damas Jewelers</a></li>
+            <li><a class="dropdown-item text-dark" href="almasj.html">Almas Jewellery</a></li>
+            <li><a class="dropdown-item text-dark" href="ary.html">ARY Jewellers	</a></li>
+            <li><a class="dropdown-item text-dark" href="nayabj.html">Nayab Jewellery</a></li>
+            <li><a class="dropdown-item text-dark" href="fazalj.html">Fazal Jewellers</a></li>
+          </ul>
+        </li>
+        <li style="color:white;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;" class="nav-item">
+            <a class="nav-link active text-light" href="contact.html">Contact Us</a>
+        </li>
+        <li style="color: white;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item">
+            <a class="nav-link active text-light" href="about.html">About us</a>
+        </li>
+        <li style="color: white;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item">
+            <a class="nav-link active text-light" href="feedback.html">Feedback Form</a>
+        </li>
+        <li style="color: white;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item">
+            <a class="nav-link active text-light " href="final.html">Comparison of Products</a>
+        </li>
+      </ul>
+    
+    </div>
+  </div>
+
+</nav>
+<img src="img/na1.webp" class="img-fluid" alt="...">
+
+<div class="container " id="conl1">
+    <h2>Pakistani Jewellery Design
+    </h2>
+    <p>Explore the exquisite world of Pakistani Jewellery Design, where Traditional Jewellery meets innovation.
+
+    </p>
+    <h2>Best Jewellery Brands in Pakistan
+    </h2>
+    <p>Discover high-quality jewelry sets at Nayab Jewellery. We specialize in Bridal jewelry, including Mala, Rings, Bangles, Lockets, and Bracelets. Elevate your style with Fashion accessories from the top online
+        Jewelry store in Pakistan</p>
+  </div>
+  <hr class="mt-3" style="color: black;margin: auto;width: 400px;font-weight: bolder;">
+  <img src="img/nayablogo.avif" class="img-fluid imgl1 mt-3 " alt="...">
+  <div class="container d-flex mt-5 justify-content-center">
+    <nav id="nav1" class="nav  nav-justified ">
+      <button id="all_a" type="button" class="btn btn-dark text-dark border-0 bg-transparent">ALL</button>
+      <button id="pre_a" type="button" class="btn btn-dark text-dark border-0 bg-transparent">SEMI PRECIOUS</button>
+      <button id="semprec_a" type="button" class="btn btn-dark text-dark border-0 bg-transparent">PRECIOUS</button>
+      <button id="art_a" type="button" class="btn btn-dark text-dark border-0 bg-transparent">ARTIFICIAL</button>
+   </nav>
+   </div>
+   <div class="container"> 
+    <div class="row" id="precious">
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="card" style="width: 18rem;  "onclick='details("img/na2.webp","  Price : Rs 150,599"," Name : Gold Maala With Earrings","Brand : Nayab ")'>
+                <img src="img/na2.webp" class="card-img-top" alt="...">
+                <button type="button" class="btn btn-outline-secondary">Discover More</button>
+
+                <div class="card-body">
+                  <p id="p1" class="card-text ">Name : Gold  Maala-Earrings </p>
+                  <p id="p1">Price : Rs 150,599</p>
+                  <p id="p1">Brand : Nayab</p>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="card" style="width: 18rem;"onclick='details("img/na3.webp","  Price : Rs 25,900"," Name : Adjust Gold Ring","Brand : Nayab")'>
+                <img src="img/na3.webp" class="card-img-top" alt="...">
+                <button type="button" class="btn btn-outline-secondary">Discover More</button>
+
+                <div class="card-body">
+                  <p id="p1" class="card-text"> Name : Adjust Gold Ring</p>
+                  <p id="p1"> Price : Rs 25,900</p>
+                  <p id="p1">Brand : Nayab</p>
+
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="card" style="width: 18rem;"onclick='details("img/na4.webp","  Price : Rs 58,103"," Name : Gold Plated Bangles ","Brand : Nayab ")'>
+                <img src="img/na4.webp" class="card-img-top" alt="...">
+                <button type="button" class="btn btn-outline-secondary">Discover More</button>
+
+                <div class="card-body">
+                  <p id="p1" class="card-text"> Name : Gold Plated Bangles</p>
+                  <p id="p1"> Price : Rs 58,103</p>
+                  <p id="p1">Brand : Nayab</p>
+
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-3 col-md-3 col-sm-6">
+            <div class="card" style="width: 18rem;" onclick='details("img/na5.webp","  Price : Rs 80,999"," Name : Gold Locket Set","Brand : Nayab ")'>
+                <img src="img/na5.webp" class="card-img-top" alt="...">
+                <button type="button" class="btn btn-outline-secondary">Discover More</button>
+
+                <div class="card-body">
+                  <p id="p1" class="card-text"> Name : Gold Locket Set</p>
+                  <p id="p1"> Price : Rs 80 ,999</p>
+                  <p id="p1">Brand : Nayab</p>
+
+                </div>
+              </div>
+        </div>
+    </div>    
+  <div class="row" id="semiprecious">
+    <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="card" style="width: 19rem;"onclick='details("img/na6.webp","  Price : Rs 200,900"," Name : Diamond Open Bangles","Brand : Nayab ")'>
+            <img src="img/na6.webp" class="card-img-top" alt="...">
+            <button type="button" class="btn btn-outline-secondary">Discover More</button>
+
+            <div class="card-body">
+              <p id="p1" class="card-text">Name : Diamond Open Bangles</p>
+              <p id="p1">Price : Rs 200,900</p>
+              <p id="p1">Brand : Nayab</p>
+
+            </div>
+          </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="card" style="width: 19rem;"onclick='details("img/na7.webp","  Price : Rs 550,000"," Name : Diamond Necklace Set","Brand : Nayab ")'>
+            <img src="img/na7.webp" class="card-img-top" alt="...">
+            <button type="button" class="btn btn-outline-secondary">Discover More</button>
+
+            <div class="card-body">
+              <p id="p1" class="card-text">Name : Diamond Necklace Set</p>
+              <p id="p1">Price : Rs 550,000</p>
+              <p id="p1">Brand : Nayab</p>
+
+            </div>
+          </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="card" style="width: 18rem;"onclick='details("img/na8.webp","  Price : Rs 350,000"," Name : Diamond Locket Set","Brand : Nayab ")'>
+            <img src="img/na8.webp" class="card-img-top" alt="...">
+            <button type="button" class="btn btn-outline-secondary">Discover More</button>
+
+            <div class="card-body">
+              <p id="p1" class="card-text">Name : Diamond Locket Set</p>
+              <p id="p1"> Price : Rs 350,000</p>
+              <p id="p1">Brand : Nayab</p>
+
+            </div>
+          </div>
+    </div>
+    <div class="col-lg-3 col-md-3 col-sm-6">
+        <div class="card" style="width: 18rem;"onclick='details("img/na9.webp","  Price : Rs 259,000"," Name : Diamond Ring","Brand : Nayab ")'>
+            <img src="img/na9.webp" class="card-img-top" alt="...">
+            <button type="button" class="btn btn-outline-secondary">Discover More</button>
+
+            <div class="card-body">
+              <p id="p1" class="card-text">Name : Diamond Ring</p>
+              <p id="p1"> Price : Rs 259,000</p>
+              <p id="p1">Brand : Nayab</p>
+
+            </div>
+          </div>
+    </div>
+</div>    
+
+<div class="row" id="artificial">
+<div class="col-lg-3 col-md-3 col-sm-6">
+    <div class="card" style="width: 18rem;"onclick='details("img/na10.webp","  Price : Rs 6,599"," Name : Stone Bangles Set","Brand : Nayab ")'>
+        <img src="img/na10.webp" class="card-img-top" alt="...">
+        <button type="button" class="btn btn-outline-secondary">Discover More</button>
+
+        <div class="card-body">
+          <p id="p1" class="card-text"> Name : Stone Bangles Set</p>
+          <p id="p1"> Price : Rs 6,599</p>                  
+           <p id="p1">Brand : Nayab</p>
+
+
+        </div>
+      </div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-6">
+    <div class="card" style="width: 19rem;"onclick='details("img/na11.webp","  Price : Rs 8,699"," Name : Hand Made Necklace Set","Brand : Nayab ")'>
+        <img src="img/na11.webp" class="card-img-top" alt="...">
+        <button type="button" class="btn btn-outline-secondary">Discover More</button>
+
+        <div class="card-body">
+          <p id="p1" class="card-text"> Name : Hand Made Necklace Set</p>
+          <p id="p1">Price : Rs 8,699</p>
+          <p id="p1">Brand : Nayab</p>
+
+
+        </div>
+      </div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-6">
+    <div class="card " style="width: 18rem;"onclick='details("img/na12.webp","  Price : Rs 2,300"," Name : Crush Baali Style Tops","Brand : Nayab ")'>
+        <img src="img/na12.webp" class="card-img-top" alt="...">
+        <button type="button" class="btn btn-outline-secondary">Discover More</button>
+
+        <div class="card-body">
+          <p id="p1" class="card-text">Name : Crush Baali Style Tops</p>
+          <p id="p1">Price : Rs 2,300</p>
+          <p id="p1">Brand : Nayab</p>
+
+
+        </div>
+      </div>
+</div>
+<div class="col-lg-3 col-md-3 col-sm-6">
+    <div class="card " style="width: 18rem;"onclick='details("img/na13.webp","  Price : Rs 3,500"," Name : Stone Locket Set","Brand : Nayab ")'>
+        <img src="img/na13.webp" class="card-img-top" alt="...">
+        <button type="button" class="btn btn-outline-secondary">Discover More</button>
+
+        <div class="card-body">
+          <p id="p1" class="card-text">Name : Stone Locket Set</p>
+          <p id="p1"> Price : Rs 3,500</p>
+          <p id="p1">Brand : Nayab</p>
+
+        </div>
+      </div>
+</div>
+</div>    
+</div>
+<div class="row align-items-center mt-5 mb-5">
+    <div style="border-right: 1px dotted black;" class="col">
+      <i style="font-size: 50px; display: flex; justify-content: center;align-items: center;margin-bottom: 10px;" class="fa-solid fa-phone"></i>
+  
+  
+      <H6 style="display: flex;flex-wrap: wrap; margin: auto;justify-content: center;align-items: center; font-size: 1.3rem;font-weight: bold;">CUSTOMER SERVICE</H6>
+      <h6 style="display: flex;flex-wrap: wrap; margin: auto;justify-content: center;align-items: center; font-size: 1rem;font-weight: lighter;"></h6style>Satisfaction Guranteed</h6>
+    </div>
+  
+    <div style="border-right: 1px dotted black;" class="col">
+      <i style="font-size: 50px; display: flex; justify-content: center;align-items: center;margin-bottom: 10px;" class="fa-solid fa-van-shuttle"></i>
+      <H6 style="display: flex;flex-wrap: wrap; margin: auto;justify-content: center;align-items: center; font-size: 1.3rem;font-weight: bold;">FREE DELIVERY</H6>
+      <h6 style="display: flex;flex-wrap: wrap; margin: auto;justify-content: center;align-items: center; font-size: 1rem;font-weight: lighter; ;"></h6style>Deliver across WorldWide</h6>
+    </div>
+  
+  
+    <div style="border-right: 1px dotted black;" class="col">
+      <i style="font-size: 50px; display: flex; justify-content: center;align-items: center;margin-bottom: 10px;" class="fa-solid fa-rotate-left"></i>
+  
+      <H6 style="display: flex;flex-wrap: wrap; margin: auto;justify-content: center;align-items: center; font-size: 1.3rem;font-weight: bold;">RETURNS</H6>
+      <h6 style="display: flex;flex-wrap: wrap; margin: auto;justify-content: center;align-items: center; font-size: 1rem;font-weight: lighter;"></h6style>Return items within 30 days</h6>
+    </div>
+    
+  </div>
+  <!-- footer  -->
+  <footer>
+    <div style="background-color: black;" class="container-fluid  mt-5">
+  <h2 style="display: flex; flex-wrap: wrap;margin: auto;justify-content: center; align-items: center;font-size: 1.5rem;color: white; margin-top: 10px;font-family: Georgia, 'Times New Roman', Times, serif; padding-top: 50px;" class="mt-5">Join the A-list and Save 15% Off Your First Order</h2>
+  <h5 style="display: flex; flex-wrap: wrap;margin: auto;justify-content: center; align-items: center;font-size: 1rem;color: white;padding: 20px; font-family: Georgia, 'Times New Roman', Times, serif;">Get the latest news and offers straight to your inbox</h5>
+  <div class="container">
+  <div class="row">
+    <div class="col">
+      <input  style="width: 95%; height: 40px; display: flex; flex-wrap: wrap; margin: auto;justify-content: center;align-items: center; border: 2px solid white; outline: none;" type="email" name="" id="" placeholder="Email address">
+      
+    </div>
+    <!-- <div class="col"> -->
+      <button style="width: 7vw; height: 6vh;margin: 0px;  display: flex; flex-wrap: wrap; margin: auto;justify-content: center;align-items: center;background-color: black;color: white; border: 1px solid white;">Sign Up</button>
+    <!-- </div> -->
+  </div>
+  </div>
+  <div style="display: flex; margin: auto; justify-content: center;align-items: center;" class="row mt-3 ">
+    <div style="display: flex; margin: auto; justify-content: center; align-items: center;" class="col">
+    <a style="padding: 15px;" href="https://www.facebook.com"><i class="fa-brands fa-facebook-f text-light"></i></a>
+    <a style="padding: 15px;" href="https://www.twitter.com"><i class="fa-brands fa-twitter text-light"></i></a>
+    <a style="padding: 15px;" href="https://www.google.com"><i class="fa-brands fa-google text-light"></i></a>
+    <a style="padding: 15px;" href="https://www.instagram.com"><i class="fa-brands fa-instagram text-light"></i></a>
+  </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-4 col-md-3 col-sm-6 mt-3 mb-2">
+      <h5 style="display: flex; margin: auto; justify-content: center; align-items: center; margin-bottom: 10px; color: white; font-family: Georgia, 'Times New Roman', Times, serif;">About</h5>
+      <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;" href="home.html"><p>Home</p></a>
+      <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;" href="gallery.html"><p>Gallery</p></a>
+      <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;" href="about.html"><p>About Us</p></a>
+      <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;" href="feedback.html"><p>Feedback Form</p></a>
+    </div>
+    <div class="col-lg-4 col-md-3 col-sm-6  mt-3 mb-2">
+      <h5 style="display: flex; margin: auto; justify-content: center; align-items: center;margin-bottom: 10px; color: white; font-family: Georgia, 'Times New Roman', Times, serif; text-align: justify;">Help</h5>
+      <!-- <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;margin-top: 10px;text-align: justify;" href=""><p>Privacy Policy</p></a> -->
+      <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;text-align: justify;" href="contact.html"><p>Contact Us</p></a>
+    </div>
+    <!-- brands  -->
+    <div class="col-lg-4 col-md-3 col-sm-6  mt-3 mb-2">
+      <h5 style="display: flex; margin: auto; justify-content: center; align-items: center;margin-bottom: 10px; color: white; font-family: Georgia, 'Times New Roman', Times, serif;">Brands</h5>
+      <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;text-align: justify;" href="hanifj.html"><p>Hanif Jewellers</p></a>
+      <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;text-align: justify;" href="damasj.html"><p>Damas Jewelers</p></a>
+      <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;text-align: justify;" href="almasj.html"><p>Almas Jewellery</p></a>
+    <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;text-align: justify;" href="ary.html"><p>ARY Jewellers	</p></a>
+    <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;text-align: justify;" href="nayabj.html"><p>Nayab Jewellery</p></a>
+  <!-- <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;text-align: justify;" href=""><p>Rabia Mustafa Jewellery</p></a> -->
+    <a style="display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;text-align: justify;" href="fazalj.html"><p>Fazal Jewellers</p></a>
+    </div>
+    
+    
+    <div class="col-12 mb-3">
+      <i style="color: white;font-size: 1rem;display: flex;justify-content: center;align-items: center;"   class="fa fa-copyright" aria-hidden="true"></i>
+      <p style="color: white;font-size: 1rem;display: flex;justify-content: center;align-items: center;margin-top: 5px;">2024 pascal'sImitationJewellry</p>
+      
+    </div>
+    
+  
+  
+  
+  </div>
+  
+  </footer>
+</body>
+<script>
+    $(document).ready(function(){
+    $("#all_a").click(function(){
+      $("#precious").show();
+      $("#semiprecious").show();
+      $("#artificial").show();
+    })
+    
+    $("#pre_a").click(function(){
+      $("#precious").show();
+      $("#semiprecious").hide();
+      $("#artificial").hide();
+    })
+    
+    $("#semprec_a").click(function(){
+      $("#precious").hide();
+      $("#semiprecious").show();
+      $("#artificial").hide();
+    })
+    
+    $("#art_a").click(function(){
+      $("#precious").hide();
+      $("#semiprecious").hide();
+      $("#artificial").show();
+    })
+    })
+    
+    // semiprecious
+    //   artificial
+    
+    // pre_a
+    //   semprec_a
+    //   art_a
+    </script>
+</html>

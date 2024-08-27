@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="constyle.css">
+</head>
+<script>
+  function details(pimg,pprice,pdis,pbrand){
+    sessionStorage.setItem("p_imgsrc",pimg);
+    sessionStorage.setItem("p_price",pprice);
+    sessionStorage.setItem("p_details",pdis);
+    sessionStorage.setItem("p_brand",pbrand);
+
+    window.location.href="card.html";
+
+  }
+</script>
+<body>
+  <div style="background-color: white;" class="container-fluid  d-none d-md-block">
+    <div class="row">
+        <div class="col-7 d-flex  justify-content-end">
+            <img src="img/pascal.PNG" alt="" width="250" height="150" class=" ">
+        </div>
+        <div class="col-5 ">
+
+            <ul class="nav ms-auto justify-content-end align-items-center mt-3">
+                <li class="nav-item">
+                  <button id="btn" type="button" class="btn btn-dark mt-5 mx-2" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Log In
+                  </button>
+                  
+                  <!-- Modal -->
+                  <div class="modal fade bg-dark" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog bg-dark">
+                      <div class="modal-content bg-secondary text-light">
+                        <div class="modal-header">
+                          <h2 class="modal-title text-light Login " id="exampleModalLabel">Log In Form</h2>
+                          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <input type="text" class="form-control mt-2" id="exampleInputEmail1" placeholder="Enter Your Email">
+                            <input type="text" class="form-control mt-5" id="exampleInputEmail1" placeholder="Enter Your Password">
+                        </div>
+                        <div class="modal-footer">
+                          <button type="button" class="btn btn-outline-light" data-bs-dismiss="modal">Login</button>
+                        
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark Login" href="https://www.whatsapp.com"><i class="fa-brands fa-whatsapp mt-5 "></i></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-dark Login" href="https://www.twitter.com"><i class="fa-brands fa-twitter mt-5 mx-0"></i></a>
+
+                </li>
+              </ul>
+        </div>
+    </div>
+</div>
+    <nav style="background-color: black;" class="navbar navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a class="navbar-brand d-block d-md-none " href="#">
+        <img src="img/pascal.PNG" alt="" width="200" height="50" class=" ">
+    </a>
+    <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon bg-light"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+        <li style="color: rgb(253, 246, 246);font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item">
+          <a class="nav-link active text-light" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li style="color: black;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item">
+          <a class="nav-link active text-light" href="gallery.html">Gallery</a>
+        </li>
+        <li style="color: black;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item dropdown">
+          <a class="nav-link active dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Brands
+          </a>
+          <ul class="dropdown-menu dropdown " aria-labelledby="navbarDropdown" >
+            <li><a class="dropdown-item text-dark" href="hanifj.html">Hanif Jewellers</a></li>
+            <li><a class="dropdown-item text-dark" href="damasj.html">Damas Jewelers</a></li>
+            <li><a class="dropdown-item text-dark" href="almasj.html">Almas Jewellers</a></li>
+            <li><a class="dropdown-item text-dark" href="ary.html">ARY Jewellers	</a></li>
+            <li><a class="dropdown-item text-dark" href="nayabj.html">Nayab Jewellers</a></li>
+            
+            <li><a class="dropdown-item text-dark" href="fazalj.html">Fazal Jewellers</a></li>
+          </ul>
+        </li>
+        <li style="color:white;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;" class="nav-item">
+            <a class="nav-link active text-light" href="contact.html">Contact Us</a>
+        </li>
+        <li style="color: white;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item">
+            <a class="nav-link active text-light" href="about.html">About us</a>
+        </li>
+        <li style="color: white;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item">
+            <a class="nav-link active text-light" href="feedback.html">Feedback Form</a>
+        </li>
+        <li style="color: white;font-size: 1rem; font-weight: bolder; font-family: Georgia, 'Times New Roman', Times, serif; text-decoration: none;"  class="nav-item">
+            <a class="nav-link active text-light" href="final.html">Comparison of Products</a>
+        </li>
+      </ul>
+    
+    </div>
+  </div> 
+
+</nav>
+<!-- introduction  -->
+<img src="img/banner2.jpg" class="img-fluid" alt="...">
+<hr style="color: black;margin: auto;width: 400px;font-weight: bolder; " class="mb-3">
+
+
+<!-- <img style="display: flex;flex-wrap: wrap;justify-content: center;align-items: center; margin: auto;" src="img/damaslogo.webp" alt="" class="mt-3"> -->
+
+<div class="container" id="con1">
+   <h2>Damas Jewellery is founded, the start of a remarkable legacy to offer goldsmith services in the Middle East</h2>
+<p>House of Jewellery Design since 1907 Our story began over 100 years ago; we have since become the leading and most recognized jewelers in the Middle East. Our name is synonymous with the ever-sought-after, the unparalleled luxurious Arabian aesthetic. Invention, craftsmanship and design integrity remain at the heart of what we do</p>
+
+<p>Damas Jewellery imported the first diamond cutting machine for producing diamond-cut bangles and wedding bands.
+
+</p>
+
+<h2 class="mt">We are passionate about jewellery and to inspire the imagination.</h2></div>
+<hr class="mt-2 mb-4" style="color: black;margin: auto;width: 400px;font-weight: bolder;">
+<img src="img/damaslogo.webp" class="img-fluid id damas  mb-5"  alt="" height="" width="">
+
+
+  
+ <div class=" container d-flex mt-2 justify-content-center">
+<nav id="nav1" class="nav nav-justified">
+  <button id="all_a" type="button" class="btn btn-dark text-dark border-0 bg-transparent">ALL</button>
+  <button id="semiprecious_a" type="button" class="btn btn-dark text-dark border-0 bg-transparent">SEMI PRECIOUS</button>
+
+  <button id="pre_a" type="button" class="btn btn-dark text-dark border-0 bg-transparent">PRECIOUS</button>
+
+  <button id="art_a" type="button" class="btn btn-dark text-dark border-0 bg-transparent">ARTIFICIAL</button>
+
+</nav>
+</div>
+<div class="container">
+  <div class="row" id="precious">
+    <div class="col-lg-3 col-md-4 col-sm-6" id="card1">
+      <div class="card" style="width: 16rem; height: 18rem;" onclick='details("img/preb.webp"," Price :3,10,000 PKR","Name :OSE Bracelet in Diamond"," Brand :Damas ")'>
+        <img src="img/preb.webp" class="card-img-top" alt="...">
+        <button  id="Discover" class="mt-4">Discover More</button>
+        
+        <div class="card-body">
+          <p class="card-text" id="des">Name :OSE Bracelet in Diamond
+
+          </p>
+          <p id="des"> Price : 3,10,000 PKR</p>
+          <p id="des"> Brand : Damas</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6"  id="card1">
+      <div class="card" style="width: 16rem; height: 18rem;" onclick='details("img/smc.webp","Price : 2,45,000 PKR ","Name :OneSixEight Diamond Earrings","Brand :Damas")'  >
+        <img src="img/smc.webp" class="card-img-top" alt="...">
+        <button  id="Discover">Discover More</button>
+        <div class="card-body">
+          <p class="card-text" id="des">Name :OneSixEight Diamond Earrings
+          </p>
+          <p id="des" class="p12">Price : 2,45,000 PKR  </p>
+          <p id="des">Brand :Damas</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6"  id="card1" >
+      <div class="card" style="width: 16rem; height: 18rem;" onclick='details("img/pre3.webp","Price :3,45,000 PKR ","Name : OneSixEight Diamond Pendant","Brand :Damas")' >
+        <img src="img/pre3.webp" class="card-img-top" alt="...">
+        <button  id="Discover">Discover More</button>
+        <div class="card-body">
+          <p class="card-text" id="des">OneSixEight Diamond Pendant</p>
+          <P id="des">Price : 3,45,000 PKR</P>
+          <p id="des">Brand : Damas</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6"id="card1" >
+      <div class="card" style="width: 16rem; height: 18rem;" onclick='details("img/PRE4.webp","Price : 2,137,000 PKR ","Name : OneSixEight Diamond Ring","Brand :Damas")' >
+        <img src="img/PRE4.webp" class="card-img-top" alt="...">
+        <button  id="Discover">Discover More</button>
+        <div class="card-body">
+          <p class="card-text" id="des">OneSixEight Diamond Ring
+          </p>
+          <P id="des">Price : 2,137,000 PKR</P>
+          <p id="des">Brand :Damas</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row  mt-4" id="semiprecious">
+    <div class="col-lg-3 col-md-4 col-sm-6"id="card1" >
+      <div class="card" style="width: 16rem; height: 18rem;" onclick='details("img/ear1.png","Price :1,30,000 PKR ","Name : Ananya Gold Earrings","Brand :Damas")' >
+        <img src="img/ear1.png" class="card-img-top" alt="...">
+        
+        <button  id="Discover">Discover More</button>
+        <div class="card-body">
+          <p class="card-text" id="des">Ananya Gold Earrings
+
+          </p>
+          <P id="des">Price : 1,30,000 PKR</P>
+          <p id="des">Brand : Damas</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6"id="card1" >
+      <div class="card" style="width: 16rem; height: 18rem;" onclick='details("img/sm1.png","Price : 1,10,000 PKR ","Name : Necklace in 18K Yellow Gold","Brand :Damas")' >
+        <img src="img/sm1.png" class="card-img-top" alt="...">
+        <!-- <button  id="Discover">Discover More</button> -->
+        <button  id="Discover" class="mt-4">Discover More</button>
+        <div class="card-body">
+          <p class="card-text" id="des">Necklace in 18K Yellow Gold 
+          </p>
+          <p id="des">Price :1,10,000 PKR</p>
+          <p id="des">Brand : Damas</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6"id="card1" >
+      <div class="card" style="width: 16rem; height: 18rem;" onclick='details("img/SM5.png","Price : 1,27,000 PKR ","Name :Ananya Bangle In 18K Gold " , "Brand :Damas")' >
+        <img src="img/SM5.png" class="card-img-top" alt="...">
+        <button  id="Discover">Discover More</button>
+        <div class="card-body">
+          <p class="card-text" id="des">Ananya Bangle In 18K Gold
+          </p>
+          <P id="des">Price : 1,27,000 PKR</P>
+          <p id="des">Brand : Damas</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-lg-3 col-md-4 col-sm-6" id="card1" >
+      <div class="card" style="width: 16rem; height: 18rem;" onclick='details("img/SM4.png","Price : 1,50,000 PKR ","Name : Ananya Diamond Necklace & Earring In 18K Gold","Brand :Damas")'>
+        <img src="img/SM4.png" class="card-img-top" alt="...">
+        
+        <button  id="Discover" class="mt-4">Discover More</button>
+        <div class="card-body">
+          
+          <p class="card-text" id="des">Ananya Diamond Necklace & Earring In 18K Gold
+          </p>
+          <P id="des">Price : 1,50,000 PKR</P>
+          <p id="des">Brand : Damas</p>
+          
+        </div>
+        
+      </div>
+    </div>
+  </div>
+  <div class="row mt-5" id="artificial">
+<div class="col-lg-3 col-md-4 col-sm-6" id="card1" >
+  <div class="card" style="width: 16rem; height: 18rem;" onclick='details("img/art5.png","Price : 5,000 PKR ","Name : Rangoli Bracelet","Brand :Damas")' >
+    <img src="img/art5.png" class="card-img-top" alt="...">
+    <button  id="Discover"  class="mt-4">Discover More</button>
+    <div class="card-body">
+      <p class="card-text" id="des">Rangoli Bracelet
+      </p>
+      <p id="des">Price : 5,000 PKR</p>
+      <p id="des">Brand : Damas</p>
+    </div>
+  </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6" id="card1" >
+  <div class="card" style="width: 16rem; height: 18rem;"  onclick='details("img/art2.png","Price : 20,000 PKR ","Name : Rangoli Necklace","Brand :Damas")' >
+    <img src="img/art2.png" class="card-img-top" alt="...">
+    <button  id="Discover">Discover More</button>
+    <div class="card-body">
+      <p class="card-text" id="des">Rangoli Necklace
+      </p>
+      <p id="des">Price : 20,000 PKR</p>
+      <p id="des">Brand : Damas</p>
+    </div>
+  </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6" id="card1" >
+  <div class="card" style="width: 16rem; height: 18rem;" onclick='details("img/art3.png","Price : 30,000  PKR ","Name : Rangoli Necklace Set","Brand :Damas")' >
+    <img src="img/art3.png" class="card-img-top" alt="...">
+    <button  id="Discover" class="mt-4">Discover More</button>
+    <div class="card-body">
+      <p class="card-text" id="des">Rangoli Necklace Set</p>
+      <p id="des">Price : 30,000 PKR</p>
+      <p id="des">Brand : Damas</p>
+    </div>
+  </div>
+</div>
+<div class="col-lg-3 col-md-4 col-sm-6" id="card1" >
+  <div class="card" style="width: 16rem; height: 18rem"  onclick='details("img/art4.png","Price : 15,000 PKR ","Name : Rangoli Earrings","Brand :Damas")' >
+    <img src="img/art4.png" class="card-img-top" alt="...">
+    <button  id="Discover" class="mt-4">Discover More</button>
+    <div class="card-body">
+      <p class="card-text" id="des">Rangoli Earrings 
+      </p>
+      <p id="des">Price : 15,000 PKR</p>
+      <p id="des">Brand : Damas</p>
+    </div>
+  </div>
+</div>
+  </div>
+</div>
+
+ <!-- customer services  -->
+ <div style="margin-top: 220px;" class="row align-items-center bg-light">
+  <div  class="col-lg-4 col-md-4 col-sm-12" id="colc">
+    <i  class="fa-solid fa-phone"></i>
+    <h8 id="hab">Satisfaction Guranteed</h8>
+  </div>
+
+  <div  class="col-lg-4 col-md-4 col-sm-12" id="colc">
+    <i class="fa-solid fa-van-shuttle"></i>
+    <H6 >FREE DELIVERY</H6>
+    <h8 id="hab">Deliver across WorldWide</h8>
+  </div>
+
+
+  <div  class="col-lg-4 col-md-4 col-sm-12" id="colc">
+    <i class="fa-solid fa-rotate-left"></i>
+
+    <H6 >RETURNS</H6>
+    <h8 id="hab">Return items within 30 days</h8>
+  </div>
+  
+</div>
+
+<!-- footer  -->
+<footer>
+  <div id="ft" class="container-fluid  mt-5">
+<h2  class="mt-5">Join the A-list and Save 15% Off Your First Order</h2>
+<h5>Get the latest news and offers straight to your inbox</h5>
+<div class="container">
+<div class="row">
+  <div class="col">
+    <input item id="em" type="email" name="" id="" placeholder="Email address">
+    
+  </div>
+  <!-- <div class="col"> -->
+    <button id="btn" >Sign Up</button>
+  <!-- </div> -->
+</div>
+</div>
+<div id="row"  class="row mt-3 ">
+  <div  id="col" class="col-lg-12 col-md-12 col-sm-12">
+  <a  href="https://www.facebook.com"><i class="fa-brands fa-facebook-f text-light"></i></a>
+  <a  href="https://www.twitter.com"><i class="fa-brands fa-twitter text-light"></i></a>
+  <a href="https://www.google.com"><i class="fa-brands fa-google text-light"></i></a>
+  <a  href="https://www.instagram.com"><i class="fa-brands fa-instagram text-light"></i></a>
+</div>
+</div>
+<div class="row">
+  <div class="col-lg-4 col-md-3 col-sm-6 mt-3 mb-2" id="colft">
+    <h5>About</h5>
+    <a href="index.html"><p>Home</p></a>
+    <a  href="gallery.html"><p>Gallery</p></a>
+    <a  href="about.html"><p>About Us</p></a>
+    
+  </div>
+  <div class="col-lg-4 col-md-3 col-sm-6  mt-3 mb-2" id="colft">
+    <h5>Help</h5>
+    <a  href="feedback.html"><p>Feedback</p></a>
+    <a href="contact.html"><p>Contact Us</p></a>
+  </div>
+  <!-- brands  -->
+  <div class="col-lg-4 col-md-3 col-sm-6  mt-3 mb-2" id="colft">
+    <h5>Brands</h5>
+    <a href="hanifj.html"><p>Hanif Jewellers</p></a>
+    <a href="almasj.html"><p>Damas Jewelers</p></a>
+    <a href="almasj.html"><p>Almas Jewellers</p></a>
+  <a  href="ary.html"><p>ARY Jewellers	</p></a>
+  <a  href="nayabj.html"><p>Nayab Jewellers</p></a>
+
+  <a href="fazalj.html"><p>Fazal Jewellers</p></a>
+  </div>
+  
+  
+  <div class="col-12 mb-3" id="colco">
+    <i class="fa fa-copyright" aria-hidden="true"></i>
+    <p>2024 pascal'sImitationJewellry</p>
+    
+  </div>
+  
+
+
+
+</div>
+  
+
+</footer>
+ </body>
+ <script>
+  $(document).ready(function(){
+    $("#all_a").click(function(){
+      $("#precious").show();
+      $("#semiprecious").show();
+      $("#artificial").show();
+    })
+
+    $("#pre_a").click(function(){
+      $("#precious").show();
+      $("#semiprecious").hide();
+      $("#artificial").hide();
+    })
+
+
+    $("#semiprecious_a").click(function(){
+      $("#precious").hide();
+      $("#semiprecious").show();
+      $("#artificial").hide();
+    })
+
+
+    $("#art_a").click(function(){
+      $("#precious").hide();
+      $("#semiprecious").hide();
+      $("#artificial").show();
+    })
+
+  })
+ </script>
+</html>

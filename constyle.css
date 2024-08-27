@@ -1,0 +1,292 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+  }
+  body{
+    /* width: 100vw; */
+    height: 100vh;
+    overflow-x: hidden;
+    
+}
+    .navbar {
+        background-color: black;
+        /* position: absolute; */
+    }
+    #ul1 li a{
+        color: white;
+        font-size: 1rem;
+         font-weight: bolder;
+          font-family: Georgia, 'Times New Roman', Times, serif; 
+          text-decoration: none;
+    }
+    #ft{
+        background-color: black;
+    }
+    #ft h2{
+        display: flex;
+         flex-wrap: wrap;
+         margin: auto;
+         justify-content: center;
+          align-items: center;
+          font-size: 1.5rem;
+          color: white;
+           margin-top: 10px;
+           font-family: Georgia, 'Times New Roman', Times, serif; 
+           padding-top: 50px;
+    }
+    #ft h5{
+        display: flex; flex-wrap: wrap;margin: auto;justify-content: center; align-items: center;font-size: 1rem;color: white;padding: 20px; font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #em{
+        width: 95%; height: 40px; display: flex; flex-wrap: wrap; margin: auto;justify-content: center;align-items: center; border: 2px solid white; outline: none;
+    }
+    #btn{
+        width: 7vw; height: 6vh;margin: 0px;  display: flex; flex-wrap: wrap; margin: auto;justify-content: center;align-items: center;background-color: black;color: white; border: 1px solid white;
+    }
+    #row{
+        display: flex;
+         margin: auto;
+          justify-content: center;
+          align-items: center;
+    }
+    #col{
+        display: flex; 
+        margin: auto; 
+        justify-content: center;
+         align-items: center
+    }
+    #col a{
+        padding: 15px;
+    }
+    #colft h5{
+        display: flex; margin: auto; justify-content: center; align-items: center;margin-bottom: 10px; color: white; font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #colft a{
+        display: flex; margin: auto; justify-content: center; align-items: center;text-decoration: none; color: white;
+    }
+    #colco i{
+        color: white;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    #colco p{
+        color: white;
+        font-size: 1rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 5px;
+    }
+    #colc{
+        border-right: 1px dotted black;
+    }
+    #colc i{
+        font-size: 50px;
+         display: flex; 
+         justify-content: center;
+         align-items: center;
+         margin-bottom: 10px; 
+        color: black;
+    }
+    #colc h6{
+        display: flex;flex-wrap: wrap; margin: auto;justify-content: center;align-items: center; font-size: 1.3rem;font-weight: bold;
+    }
+    #h4a{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 40px;
+        font-size: 2rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+
+    }
+    #pc{
+      font-size: 1rem;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin-top: 0px;
+    }
+    #send{
+      margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    }
+    #send:hover{
+      outline: white;
+    }
+    #alt{
+      display: flex; 
+      flex-wrap: wrap;
+
+        flex-direction: column;
+    }
+    #box{
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: column;
+        justify-content: start;
+        align-items: start; 
+    }
+    #cus{
+      margin-top: 30px; font-weight: bold; font-size: 1rem; text-align: center;font-family: Georgia, 'Times New Roman', Times, serif
+    }
+    #pas{
+      text-align: justify;
+       font-family: Georgia, 'Times New Roman', Times, serif
+    }
+    #tel{
+      font-weight: bold; font-size: 1rem; text-align: center; font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    #blo{
+      font-weight: bold;
+       font-size: 1rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+         margin-top: 40px;
+    }
+    #p2{
+      font-size: 1rem; 
+      font-family: Georgia, 'Times New Roman', Times, serif
+    }
+#hab{
+  display: flex;
+  flex-wrap: wrap;
+   margin: auto;
+   justify-content: center;
+   align-items: center; 
+   font-size: 1rem;
+   font-weight: lighter;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* dmas */
+.carousel{
+    height: 70vh;
+}
+#con1{
+    /* display: flex; */
+    justify-content: center;
+    align-items:center ;
+    text-align: center;
+    padding: 30px;
+    
+}
+#con1 h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 10px;
+}
+#con1 p{
+    font-size: 1.4rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 500;
+    padding: 10px;
+}
+#des{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: lighter;
+  display: none;
+}
+#card1{
+ padding: 20px;
+ display: flex;
+ flex-wrap: wrap;
+ 
+ 
+ 
+}
+#all_a, #pre_a, #semiprecious_a, #art_a{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+.damas{
+display: flex;
+flex-wrap: wrap;
+margin: auto;
+justify-content: center;
+align-items: center;
+}
+/* almas */
+
+#almas{
+    margin-top: 100px;
+}
+#purple{
+  
+  color:rgb(8, 8, 8);
+
+}
+
+
+/* card */
+#card-img{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border-top-right-radius: 30px;
+  /* border: 1px  dotted black; */
+  border-bottom-left-radius: 30px;
+  margin-top: 50px;
+}
+#PRICE{
+  background-color: rgb(214, 187, 214);
+   /* border-radius: 10px; */
+   border-top-right-radius: 10px; 
+   border-bottom-left-radius: 10px;
+   height: 50px;
+   border: none;
+}
+#about{
+  height:50px;
+  border-top-right-radius: 10px; 
+  border-bottom-left-radius: 10px;
+  border:2px solid white;
+
+}
+#Discover{
+  background-color: lightgrey;
+  color: BLACK;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  outline: transparent;
+  border: transparent;
+  font-size: 1.2rem;
+}
+#precious{
+  font-size: 2rem;
+}
+#sm{
+  background-color: aquamarine;
+}
+.con8 i{
+  visibility: hidden;
+  font-size: 10px;
+  justify-content: center;
+  color: red;
+      }
+     .con8 p{
+          padding-left: 5px;
+          margin: 0px;
+          justify-content: center;
+          font-size: 13px;
+      }
